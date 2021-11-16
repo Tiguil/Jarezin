@@ -1,0 +1,285 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+		<title>Mercado Jaré</title>
+        <link rel="icon" href="./imagens/crocodilo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+				<h2 class="titulo">Mercado Jaré</h2>
+			</div>
+		</header>
+        
+        <div class="container">
+            <label for="filtrar-produtos">Filtro:</label>
+            <input type="text" name="filtro" id="filtrar-produtos" placeholder="Digite o produto">
+        </div>
+
+        <div>
+            <img class="logo" src="imagens/logo.jpeg">
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn menu"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a onclick="merceariaSalgada()" class="mercearia-salgada">Mercearia Salgada</a>
+              <a onclick="merceariaDoce()" class="mercearia-doce">Mercearia Doce</a>
+              <a onclick="hortifruti()" class="hortifruti">Hortifruti</a>
+              <a onclick="bebidas()" class="bebidas">Bebidas</a>
+              <a onclick="frios()" class="frios">Frios</a>
+              <a onclick="higiene()" class="higiene">Higiene</a>
+              <a onclick="limpeza()" class="limpeza">Limpeza</a>
+              <a onclick="variados()" class="variados">Variádos</a>
+            </div>
+          </div>
+
+        <main>
+			<section class="container">
+				<h2>Produtos</h2>
+                    <div class="conatinerFlex">
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Arroz Camil.jpg" > </br> <h5 class="nome">Arroz Camil 5Kg</h5><br><h2>R$ 21,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Arroz Solito.png"> </br> <h5 class="nome">Arroz Solito 5Kg</h5><br><h2>R$ 17,89</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Feijão Kicaldo.webp"> </br> <h5 class="nome">Feijão Kicaldo 1Kg</h5><br><h2>R$ 6,69</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Feijão Camil.jpeg"> </br> <h5 class="nome">Feijão Camil</h5><br><h2>R$ 7,39</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/Fermento.jpg"> </br> <h5 class="nome">Fermento Royal 100g</h5><br><h2>R$ 3,50</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Azeite Cocinero.jpg"> </br> <h5 class="nome">Azeite Cocinero 250ml</h5><br><h2>R$ 13,29</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Azeite Andorinha.jpg"> </br> <h5 class="nome">Azeite Andorinha 250ml</h5><br><h2>R$ 13,00</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Farinha DB.jpg"> </br> <h5 class="nome">Farinha de Trigo Dona Benta 1Kg</h5><br><h2>R$ 3,80</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Farinha Sol.jpg"> </br> <h5 class="nome">Farinha de Trigo Sol 1Kg</h5><br><h2>R$ 4,59</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/Ovo.jpg"> </br> <h5 class="nome">Ovos do Jaré com 6 Unidades</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/Pipoca.jpg"> </br> <h5 class="nome">Milho para Pipoca Yoki 500g</h5><br><h2>R$ 2,69</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/farinha de mandioca.jpg"> </br> <h5 class="nome">Farinha de Mandioca Yoki 500g</h5><br><h2>R$ 4,79</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/macarrão dona benta.jpg"> </br> <h5 class="nome">Macarrão Parafuso Dona Benta 500g</h5><br><h2>R$ 2,55</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/macarrão renata.jpg"> </br> <h5 class="nome">Macarrão Parafuso Renata 500g</h5><br><h2>R$ 2,98</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/lasanha dona benta.jpg"> </br> <h5 class="nome">Lasanha Dona Benta 500g</h5><br><h2>R$ 8,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/maizena.jpg"> </br> <h5 class="nome">Amido de Milho Maizena 1Kg</h5><br><h2>R$ 18,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/óleo soya.jpg"> </br> <h5 class="nome">Óleo Soya 1L</h5><br><h2>R$ 8,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/óleo liza.jpg"> </br> <h5 class="nome">Óleo Liza 1L</h5><br><h2>R$ 12,89</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sal lebre.jpg"> </br> <h5 class="nome">Sal Grosso Lebre 1Kg</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sal nobre.png"> </br> <h5 class="nome">Sal Refinado Nobre 1Kg</h5><br><h2>R$ 2,79</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/pimenta reino.jpg"> </br> <h5 class="nome">Pimenta do Reino Kitano 50g</h5><br><h2>R$ 9,55</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/óregano.jpg"> </br> <h5 class="nome">Óregano Kitano 10g</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/colorau.jpg"> </br> <h5 class="nome">Colorau Kitano 50g</h5><br><h2>R$ 2,10</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/knorr galinha.jpg"> </br> <h5 class="nome">Caldo Knorr Galinha 57g 6 Cubos</h5><br><h2>R$ 1,80</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/knorr carne.jpg"> </br> <h5 class="nome">Caldo Knorr Carne 57g 6 Cubos</h5><br><h2>R$ 2,37</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sazon carne.jpg"> </br> <h5 class="nome">Sazon de Carne 50g</h5><br><h2>R$ 4,25</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sazon legumes.jpg"> </br> <h5 class="nome">Sazon de Legumes 50g</h5><br><h2>R$ 4,25</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sazon frango.png"> </br> <h5 class="nome">Sazon de Frango 50g</h5><br><h2>R$ 4,25</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/sazon salada.jpg"> </br> <h5 class="nome">Sazon de Salada 50g</h5><br><h2>R$ 3,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/vinagre.jpg"> </br> <h5 class="nome">Vinagre Castelo 1L</h5><br><h2>R$ 2,79</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/cafe brasileiro.jpg"> </br> <h5 class="nome">Café Brasileiro 500g</h5><br><h2>R$ 8,23</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/pilao.png"> </br> <h5 class="nome">Café Pilão 500g</h5><br><h2>R$ 15,69</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/nescau.webp"> </br> <h5 class="nome">Nescau 400g</h5><br><h2>R$ 13,98</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/toddy.jpg"> </br> <h5 class="nome">Toddy 400g</h5><br><h2>R$ 8,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/açucar alegre.jpg"> </br> <h5 class="nome">Açúcar Refinado Alto Alegre 1Kg</h5><br><h2>R$ 5,59</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/açucar uniao.jpg"> </br> <h5 class="nome">Açúcar Refinado União 1Kg</h5><br><h2>R$ 5,69</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/pao pullman.jpeg"> </br> <h5 class="nome">Pão de Forma Pullman 500g</h5><br><h2>R$ 4,98</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/pao seven.jpg"> </br> <h5 class="nome">Pão de Forma Seven Boys 500g</h5><br><h2>R$ 4,25</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/tangs.webp"> </br> <h5 class="nome">Tang Sabores 25g</h5><br><h2>R$ 0,88</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/mid.jpg"> </br> <h5 class="nome">Mid Sabores 25g</h5><br><h2>R$ 0,82</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/adoçante.jpg"> </br> <h5 class="nome">Adoçante Zero-Cal 100ml</h5><br><h2>R$ 3,60</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/fandangos.jpg"> </br> <h5 class="nome">Salgadinho Fandangos Presunto 230g</h5><br><h2>R$ 11,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/torcida.jpg"> </br> <h5 class="nome">Salgadinho Torcida Pimenta 90g</h5><br><h2>R$ 4,73</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/fofura.jpg"> </br> <h5 class="nome">Salgadinho Forura Cebola 100g</h5><br><h2>R$ 1,89</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/cheetos.jpg"> </br> <h5 class="nome">Salgadinho Cheetos Requeijão 230g</h5><br><h2>R$ 11,29</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/salgadao.jpg"> </br> <h5 class="nome">Salgadão 70g</h5><br><h2>R$ 3,80</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/yokitos.jpg"> </br> <h5 class="nome">Salgadinho Yokitos Batata 90g</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/trakinas.jpg"> </br> <h5 class="nome">Bolacha Trakinas Chocolate 126g</h5><br><h2>R$ 1,85</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/negrito.jpg"> </br> <h5 class="nome">Bolacha Negrito Baunilha 130g</h5><br><h2>R$ 1,30</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/passa tempo.jpg"> </br> <h5 class="nome">Bolacha Passatempo Chocolate 126g</h5><br><h2>R$ 1,39</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/clube social.jpg"> </br> <h5 class="nome">Clube Social 288g 12 Unidades</h5><br><h2>R$ 10,39</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/agua e sal.png"> </br> <h5 class="nome">Bolacha Água e Sal Vitarella 400g</h5><br><h2>R$ 4,35</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/maizena bolacha.jpg"> </br> <h5 class="nome">Bolacha Maizena Vitarella 400g</h5><br><h2>R$ 4,39</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/leite italac.webp"> </br> <h5 class="nome">Leite Integral Italac 1L</h5><br><h2>R$ 3,59</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item frio"><img class="imagem" src="./produtos/tirol.jpg"> </br> <h5 class="nome">Leite Integral Tirol 1L</h5><br><h2>R$ 3,40</h2><div class="border-bottom"></div></div>
+                    <div class="item varia"><img class="imagem" src="./produtos/filtro café.jpg"> </br> <h5 class="nome">Filtro 3 Corações 103 30 Unidades</h5><br><h2>R$ 4,85</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/88.jpg"> </br> <h5 class="nome">Sardinha com Óleo 88</h5><br><h2>R$ 2,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/creme de leite.png"> </br> <h5 class="nome">Creme de Leite Italac 200g</h5><br><h2>R$ 2,19</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia2"><img class="imagem" src="./produtos/leite condensado.jpg"> </br> <h5 class="nome">Leite Condensado Italac 270g</h5><br><h2>R$ 4,29</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/quero.jpg"> </br> <h5 class="nome">Molho de Tomate Quero 340g</h5><br><h2>R$ 1,35</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/fugini.jpg"> </br> <h5 class="nome">Molho de Tomate Fugini 300g</h5><br><h2>R$ 0,99</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/azeitona.jpeg"> </br> <h5 class="nome">Azeitonas Verdes La Violetera 400g</h5><br><h2>R$ 5,50</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/água minalba.jpg"> </br> <h5 class="nome">Água Mineral Minalba 510ml</h5><br><h2>R$ 1,79</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/coca cola.jpg"> </br> <h5 class="nome">Coca-Cola 1,5L</h5><br><h2>R$ 6,50</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/sukita.webp"> </br> <h5 class="nome">Sukita Laranja 2L</h5><br><h2>R$ 4,89</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/kuat.jpg"> </br> <h5 class="nome">Guaraná Kuat 2L</h5><br><h2>R$ 5,19</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/guarana.webp"> </br> <h5 class="nome">Guaraná Antartica 350ml</h5><br><h2>R$ 2,39</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/fanta.jpg"> </br> <h5 class="nome">Fanta Uva 2L</h5><br><h2>R$ 6,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/dolly.jpg"> </br> <h5 class="nome">Dolly Citrus 2L</h5><br><h2>R$ 4,17</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/skol.webp"> </br> <h5 class="nome">Cerveja Skol 269ml 15 Unidades</h5><br><h2>R$ 34,35</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/itaipava.jpg"> </br> <h5 class="nome">Cerveja Itaipava 269ml 12 Unidades</h5><br><h2>R$ 30,89</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/brahma.jpg"> </br> <h5 class="nome">Cerveja Brahma Duplo Malte 350ml 12 Unidades</h5><br><h2>R$ 38,28</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/corote.jpg"> </br> <h5 class="nome">Corote 500ml</h5><br><h2>R$ 2,90</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/51.jpg"> </br> <h5 class="nome">Cachaça 51 700ml</h5><br><h2>R$ 21,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/balalaika.jpg"> </br> <h5 class="nome">Vodka Balalaika 1L</h5><br><h2>R$ 10,00</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/passport.png"> </br> <h5 class="nome">Whisky Passport 1L</h5><br><h2>R$ 43,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/royal.png"> </br> <h5 class="nome">Whisky Royal Salute 700ml (Única Unidade)</h5><br><h2>R$ 999,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/cavala.jpg"> </br> <h5 class="nome">Whisky Cavalo Branco 1L</h5><br><h2>R$ 73,90</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/del valle manga.webp"> </br> <h5 class="nome">Suco del Valle Manga 1L</h5><br><h2>R$ 5,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/del valle uva.jpeg"> </br> <h5 class="nome">Suco del Valle Uva 1L</h5><br><h2>R$ 5,99</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/sufresh maracuja.jpg"> </br> <h5 class="nome">Suco Sufresh Maracujá 1L</h5><br><h2>R$ 4,55</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item bebes"><img class="imagem" src="./produtos/sufresh laranja.jpg"> </br> <h5 class="nome">Suco Sufresh Laranja 1L</h5><br><h2>R$ 4,55</h2><div class="border-bottom"></div></div>
+                    <div class="item bebes"><img class="imagem" src="./produtos/da fruta.jpg"> </br> <h5 class="nome">Suco Dafruta Laranja 200ml</h5><br><h2>R$ 1,79</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/mussarela.jpg"> </br> <h5 class="nome">Mussarela Tirolez 150g</h5><br><h2>R$ 10,80</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item frio"><img class="imagem" src="./produtos/presunto.jpg"> </br> <h5 class="nome">Presunto Seara 200g</h5><br><h2>R$ 9,59</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/mortadela.jpg"> </br> <h5 class="nome">Mortadela Aurora 400g</h5><br><h2>R$ 6,99</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/requeijao tirolez.jpg"> </br> <h5 class="nome">Requeijão Tirolez 200g</h5><br><h2>R$ 4,30</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item frio"><img class="imagem" src="./produtos/requeijao.jpg"> </br> <h5 class="nome">Requeijão Vigor 200g</h5><br><h2>R$ 6,39</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/margarina qualy.jpg"> </br> <h5 class="nome">Margarina Qualy 500g</h5><br><h2>R$ 5,25</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/delicia.jpg"> </br> <h5 class="nome">Margarina Delícia 500g</h5><br><h2>R$ 6,38</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item frio"><img class="imagem" src="./produtos/yakult.jpg"> </br> <h5 class="nome">Leite Fermentado Yakult 80g 6 Unidades</h5><br><h2>R$ 11,99</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/chamyto1.jpg"> </br> <h5 class="nome">Leite Fermentado Chamyto 120g 6 Unidades</h5><br><h2>R$ 4,69</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/batavo.jpg"> </br> <h5 class="nome">Leite Fermentado Batavo 1L</h5><br><h2>R$ 8,29</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item frio"><img class="imagem" src="./produtos/danone.jpg"> </br> <h5 class="nome">Danone Morango 90g 6 Unidades</h5><br><h2>R$ 5,00</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/chamyto2.jpeg"> </br> <h5 class="nome">Chamyto com Cereal Sabor Chocolate 130g</h5><br><h2>R$ 3,49</h2><div class="border-bottom"></div></div>
+                    <div class="item frio"><img class="imagem" src="./produtos/vigorzinho.jpg"> </br> <h5 class="nome">Vigorzinho Chocolate 45g 8 Unidades</h5><br><h2>R$ 8,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/ketchup quero.jpg"> </br> <h5 class="nome">Ketchup Quero 400g</h5><br><h2>R$ 3,29</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/ketchup hemmer.jpg"> </br> <h5 class="nome">Ketchup Hemmer 320g</h5><br><h2>R$ 5,85</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/mostarda quero.jpeg"> </br> <h5 class="nome">Mostarda Quero 190g</h5><br><h2>R$ 4,59</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/mostarda hemmer.jpg"> </br> <h5 class="nome">Mostarda Hemmer 700g</h5><br><h2>R$ 9,90</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/maionese quero.jpeg"> </br> <h5 class="nome">Maionese Quero 250g</h5><br><h2>R$ 3,29</h2><div class="border-bottom"></div></div>
+                    <div class="item mercearia1"><img class="imagem" src="./produtos/maionese hellmanns.jpg"> </br> <h5 class="nome">Maionese Hellmanns 250g</h5><br><h2>R$ 4,29</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/cebola.jpg"> </br> <h5 class="nome">Cebola (Kg)</h5><br><h2>R$ 5,99</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/batata.jpg"> </br> <h5 class="nome">Batata (Kg)</h5><br><h2>R$ 5,59</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/alho.jpg"> </br> <h5 class="nome">Alho (Kg)</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/alface.jpg"> </br> <h5 class="nome">Alface</h5><br><h2>R$ 2,99</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/pimentao.jpg"> </br> <h5 class="nome">Pimentão Verde (Kg)</h5><br><h2>R$ 7,79</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/tomate.jpg"> </br> <h5 class="nome">Tomate (Kg)</h5><br><h2>R$ 8,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/cenoura.jpg"> </br> <h5 class="nome">Cenoura (Kg)</h5><br><h2>R$ 3,39</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/Mandioca.png"> </br> <h5 class="nome">Mandioca (Kg)</h5><br><h2>R$ 5,49</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/abóbora.webp"> </br> <h5 class="nome">Abóbora</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/banana.jpg"> </br> <h5 class="nome">Cacho de Banana Prata</h5><br><h2>R$ 7,98</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/maça.jpg"> </br> <h5 class="nome">Maçãs Turma da Mônica 1Kg</h5><br><h2>R$ 9,99</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/mamao.jpg"> </br> <h5 class="nome">Mamão</h5><br><h2>R$ 4,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item horti"><img class="imagem" src="./produtos/laranja.jpg"> </br> <h5 class="nome">Saco de Laranja 1Kg</h5><br><h2>R$ 6,49</h2><div class="border-bottom"></div></div>
+                    <div class="item horti"><img class="imagem" src="./produtos/limao.jpg"> </br> <h5 class="nome">Limão (Kg)</h5><br><h2>R$ 4,25</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/candida sanitaria.jpg"> </br> <h5 class="nome">Água Sanitária Candida 1L</h5><br><h2>R$ 5,69</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item limpe"><img class="imagem" src="./produtos/ype sanitaria.jpg"> </br> <h5 class="nome">Água Sanitária Ypê 2L</h5><br><h2>R$ 7,59</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/alcool.jpg"> </br> <h5 class="nome">Ácool Zulu 70% 1L</h5><br><h2>R$ 7,98/h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/ype amaciante.jpg"> </br> <h5 class="nome">Amaciante Ypê 2L</h5><br><h2>R$ 8,23</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item limpe"><img class="imagem" src="./produtos/comfort amanciante.jpg"> </br> <h5 class="nome">Amaciante Comfort 1L</h5><br><h2>R$ 14,99</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/desinfetante pinho.jpg"> </br> <h5 class="nome">Desinfetante Pinho Lavanda 1L</h5><br><h2>R$ 9,12</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/desinfetante sanol.jpeg"> </br> <h5 class="nome">Desinfetante Sanol Herbal 5L</h5><br><h2>R$ 17,49</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item limpe"><img class="imagem" src="./produtos/ype multiuso.jpg"> </br> <h5 class="nome">Multiuso Ypê 500ml</h5><br><h2>R$ 2,29</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/veja.jpg"> </br> <h5 class="nome">Multiuso Veja 500ml</h5><br><h2>R$ 3,09</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/sabao omo.jpg"> </br> <h5 class="nome">Sabão em Pó Omo 1Kg</h5><br><h2>R$ 16,99</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item limpe"><img class="imagem" src="./produtos/tixan.jpg"> </br> <h5 class="nome">Sabão em Pó Tixan Ypê 1Kg</h5><br><h2>R$ 11,99</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/ype detergente.jpg"> </br> <h5 class="nome">Detergente Ypê 500ml</h5><br><h2>R$ 1,69</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/detergente minuano.jpg"> </br> <h5 class="nome">Detergente Minuano 500ml</h5><br><h2>R$ 1,75</h2><div class="border-bottom"></div></div>
+                    
+                
+                    <div class="item limpe"><img class="imagem" src="./produtos/esponja.png"> </br> <h5 class="nome">Esponja Esfrebom 4 Unidades</h5><br><h2>R$ 3,85</h2><div class="border-bottom"></div></div>
+                    <div class="item limpe"><img class="imagem" src="./produtos/bombril.jpg"> </br> <h5 class="nome">Palha de Aço Bombril</h5><br><h2>R$ 1,69</h2><div class="border-bottom"></div></div>
+                    <div class="item varia"><img class="imagem" src="./produtos/papel aluminio.jpg"> </br> <h5 class="nome">Papel Alumínio Bompack</h5><br><h2>R$ 3,50</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item hige"><img class="imagem" src="./produtos/papel toalha.jpg"> </br> <h5 class="nome">Papel Toalha Mili 2 Unidades</h5><br><h2>R$ 5,80</h2><div class="border-bottom"></div></div>
+                    <div class="item varia"><img class="imagem" src="./produtos/fosforo.png"> </br> <h5 class="nome">Fósforos Fiat Lux (300 Fósforos)</h5><br><h2>R$ 4,49</h2><div class="border-bottom"></div></div>
+                    <div class="item hige"><img class="imagem" src="./produtos/palito de dente.jpeg"> </br> <h5 class="nome">Palito de Dente Gina (200 Palitos)</h5><br><h2>R$ 2,80</h2><div class="border-bottom"></div></div>
+                
+                
+                    <div class="item hige"><img class="imagem" src="./produtos/papel personal.jpg"> </br> <h5 class="nome">Papel Higiênico Personal 12 Unidades</h5><br><h2>R$ 13,98</h2><div class="border-bottom"></div></div>
+                    <div class="item hige"><img class="imagem" src="./produtos/papel elite.jpg"> </br> <h5 class="nome">Papel Higiênico Elite 24 Unidades</h5><br><h2>R$ 21,89</h2><div class="border-bottom"></div></div>
+                    <div class="item hige"><img class="imagem" src="./produtos/papel fofinho.jpg"> </br> <h5 class="nome">Papel Higiênico Fofinho 12 Unidades</h5><br><h2>R$ 12,60</h2><div class="border-bottom"></div></div>
+                    <div class="ultimoItem"></div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/menu.js" ></script>
+        <script src="js/filtro.js" ></script>
+    
+    </body>
+        
+    
+
+
+</html> 
